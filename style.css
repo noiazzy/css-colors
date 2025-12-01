@@ -1,1 +1,56 @@
-/* Start coding here */
+/* รีเซ็ตค่าพื้นฐาน */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* จัดกึ่งกลางคอนเทนต์ทั้งแนวตั้งและแนวนอน */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Times New Roman', Times, serif;
+  
+  /* กำหนดสีพื้นหลังไล่เฉด (Gradient) ด้วย HSL */
+  background: linear-gradient(
+      45deg, 
+      hsl(0, 100%, 70%),   /* สีที่ 1 */
+      hsl(240, 100%, 70%)  /* สีที่ 2 */
+  );
+}
+
+.container {
+  /* สีกล่องแบบ HSL + Alpha (โปร่งแสง) */
+  background-color: hsla(0, 50%, 100%, 0.5);
+  
+  /* การจัดวางและตกแต่ง */
+  padding: 40px;
+  border-radius: 8px;
+  width: 600px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #222;
+  font-weight: bold;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  /* จัดข้อความแบบกระจายแต่บรรทัดสุดท้ายอยู่กลาง */
+  text-align: justify;
+  text-align-last: center;
+}
+
+.icon {
+  font-size: 20px;
+  margin: 0 10px;
+}
